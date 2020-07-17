@@ -1,9 +1,6 @@
 public class opeartions {
-    calculator cal;
-    public opeartions(calculator cal)
-    {
-        this.cal=cal;
-    }
+    calculator cal = new calculator();
+
 
 
     public int add(int a,int b)

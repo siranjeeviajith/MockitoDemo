@@ -1,4 +1,6 @@
-public interface calculator {
-    int add(int a, int b);
+public class calculator {
+    public int add(int a, int b){
+        return a+b;
+    }
 
 }

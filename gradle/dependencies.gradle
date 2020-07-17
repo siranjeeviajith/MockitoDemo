@@ -1,0 +1,32 @@
+ext {
+    libsVersion = [
+            junit            : '4.12',
+
+
+//            gaeJdo           : "3.1.3",
+//            gaeDatanucleus   : "2.1.2",
+//            gaeJdo           : "3.1.3",
+
+            gaeGradle        : '+',
+            mockito          : '2.19.0',
+            powerMockito     : '2.0.0-beta.5',
+            gaeTestUtil      : '0.1.1',
+    ]
+
+    libs = [
+
+            junit               : "junit:junit:$libsVersion.junit",
+            powerMockApi        : "org.powermock:powermock-api-mockito2:$libsVersion.powerMockito",
+
+            // dependencies from sharedLibs
+           tests               : [
+                    "junit:junit:$libsVersion.junit",
+
+
+//                    "org.mockito:mockito-core:$libsVersion.mockito",
+                    "org.powermock:powermock-module-junit4:$libsVersion.powerMockito",
+            ],
+    ]
+
+    //configs
+}
